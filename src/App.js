@@ -2,10 +2,8 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import Patients from './components/Patients';
-import PatientDetail from './components/PatientDetail';
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
+import { PatientDetail, Patients, Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
@@ -21,11 +19,6 @@ const App = () => {
       setCurrentMode(currentThemeMode);
     }
   }, []);
-  const patients = [
-    { id: 1, name: 'John Doe', age: 30 },
-    { id: 2, name: 'Jane Doe', age: 25 },
-    // Add more patients as needed
-  ];
 
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
@@ -73,11 +66,11 @@ const App = () => {
                 {/* dashboard  */}
                 <Route path="/" element={(<Ecommerce />)} />
                 <Route path="/dashboard" element={(<Ecommerce />)} />
-                <Route path="/patients" element={(<Patients patients={patients} />)} />
+                <Route path="/patients" element={(<Patients />)} />
                 <Route path="/messages" element={(<Ecommerce />)} />
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/setting" element={<Calendar />} />
-                <Route path="/patient/:id" element={<PatientDetail patients={patients} />} />
+                <Route path="/patients/:id" element={<PatientDetail />} />
                 {/* pages  */}
                 <Route path="/orders" element={<Orders />} />
                 <Route path="/employees" element={<Employees />} />

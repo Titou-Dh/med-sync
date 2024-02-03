@@ -1,9 +1,13 @@
-// PatientDetail.js
+
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Breadcrumb from './BreadCrumb';
+import { Breadcrumb } from '../components';
 
-const PatientDetail = ({ patients }) => {
+const PatientDetail = () => {
+  const patients = [
+    { id: 1, name: 'John Doe', age: 30 },
+    { id: 2, name: 'Jane Doe', age: 25 },
+  ];
   const { id } = useParams();
   const patient = patients.find((p) => p.id === parseInt(id, 10));
 

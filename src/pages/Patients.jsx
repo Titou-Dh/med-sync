@@ -1,16 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BreadCrumb from './BreadCrumb.jsx';
+import { Breadcrumb } from '../components';
 
-const Patients = ({ patients }) => {
+const Patients = () => {
   const breadcrumbItems = [
     { label: 'Home', to: '/' },
     { label: 'Patients', to: '/patients' },
   ];
 
+  const pa = [
+    { id: 1, name: 'John Doe', age: 30 },
+    { id: 2, name: 'Jane Doe', age: 25 },
+  ];
+
   return (
     <div className="p-4">
-      <BreadCrumb items={breadcrumbItems} />
+      <Breadcrumb items={breadcrumbItems} />
       <table className="min-w-full bg-white border border-gray-300">
         <thead>
           <tr>
@@ -20,15 +25,15 @@ const Patients = ({ patients }) => {
           </tr>
         </thead>
         <tbody>
-          {patients.map((patient) => (
-            <tr key={patient.id}>
-              <td className="py-2 px-4 border-b">{patient.id}</td>
+          {pa.map((p) => (
+            <tr key={p.id}>
+              <td className="py-2 px-4 border-b">{p.id}</td>
               <td className="py-2 px-4 border-b">
-                <Link to={`/patient/${patient.id}`} className="text-blue-500">
-                  {patient.name}
+                <Link to={`/patient/${p.id}`} className="text-blue-500">
+                  {p.name}
                 </Link>
               </td>
-              <td className="py-2 px-4 border-b">{patient.age}</td>
+              <td className="py-2 px-4 border-b">{p.age}</td>
             </tr>
           ))}
         </tbody>
