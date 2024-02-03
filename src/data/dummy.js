@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock, AiOutlineUser, AiOutlineComment, AiOutlineSetting } from 'react-icons/ai';
-import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
+import { FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart, FiColumns} from 'react-icons/fi';
+import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft, BsColumns } from 'react-icons/bs';
 import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 
@@ -473,8 +473,8 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'ecommerce',
-        icon: <FiShoppingBag />,
+        name: 'Dashboard',
+        icon: <BsColumns />,
       },
     ],
   },
@@ -519,7 +519,6 @@ export const links = [
   {
     title: 'Apps',
     links: [
-      
       {
         name: 'kanban',
         icon: <BsKanban />,
