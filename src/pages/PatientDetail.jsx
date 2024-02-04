@@ -14,7 +14,7 @@ export class PatientDetail extends Component {
   }
 
   componentDidMount() {
-    const patients = this.state();
+    const { patients } = this.state();
     const queryParameters = new URLSearchParams(window.location.search);
     const id = queryParameters.get('id');
     const patient = patients.find((p) => p.id === parseInt(id, 10));
