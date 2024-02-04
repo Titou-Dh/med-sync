@@ -43,7 +43,7 @@ class PatientsClass extends Component {
                 <td className="py-2 px-4 border-b">{patient.id}</td>
                 <td className="py-2 px-4 border-b">
                   <Link
-                    to={`/patients/${patient.id}`}
+                    to={`/patients/patient?id=${patient.id}`}
                     className="text-blue-500"
                   >
                     {patient.name}
