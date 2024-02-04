@@ -16,36 +16,32 @@ function Patients() {
         </NavLink>
         <FaGreaterThan className="text-gray-400 text-xl" />
       </div>
-      <table className="min-w-full bg-white border border-gray-300">
-        <thead>
-          <tr>
-            <th className="py-2 px-4 border-b">ID</th>
-            <th className="py-2 px-4 border-b">Firstname</th>
-            <th className="py-2 px-4 border-b">Lastname</th>
-            <th className="py-2 px-4 border-b">email</th>
-            <th className="py-2 px-4 border-b">gender</th>
-            <th className="py-2 px-4 border-b">Ip Adress</th>
-          </tr>
-        </thead>
-        <tbody>
-          {patients.map((patient) => (
-            <tr
-              key={patient.id}
-            >
-              <td className="py-2 px-4 border-b">{patient.id}</td>
-              <td className="py-2 px-4 border-b">
-                <NavLink to={`/patients/${patient.id}`} className="text-blue-500">
-                  {patient.first_name}
-                </NavLink>
-              </td>
-              <td className="py-2 px-4 border-b">{patient.last_name}</td>
-              <td className="py-2 px-4 border-b">{patient.email}</td>
-              <td className="py-2 px-4 border-b">{patient.gender}</td>
-              <td className="py-2 px-4 border-b">{patient.ip_adress}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div
+        className="px-12 py-7 rounded-3xl  overflow-scroll bg-white"
+        style={{ height: '80vh' }}
+      >
+        <table className="min-w-full border-gray-300">
+          <tbody>
+            {patients.map((patient) => (
+              <tr
+                key={patient.id}
+                className="p-9"
+              >
+                <td className="py-6 px-4 border-b">{patient.id}</td>
+                <td className="py-6 px-4 border-b">
+                  <NavLink to={`/patients/${patient.id}`} className="text-blue-500">
+                    {patient.first_name}
+                  </NavLink>
+                </td>
+                <td className="py-6 px-4 border-b">{patient.last_name}</td>
+                <td className="py-6 px-4 border-b">{patient.email}</td>
+                <td className="py-6 px-4 border-b">{patient.gender}</td>
+                <td className="py-6 px-4 border-b">{patient.ip_address}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
