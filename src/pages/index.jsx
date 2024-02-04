@@ -16,5 +16,3 @@ export { default as Pyramid } from './Charts/Pyramid';
 export { default as Stacked } from './Charts/Stacked';
 export { default as PatientDetail } from './PatientDetail';
 export { default as Patients } from './Patients';
-export { default as Test } from './Test';
-
