@@ -1,10 +1,11 @@
-// Breadcrumb.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Breadcrumb = ({ items }) => {
+const Breadcrumb = () => {
   <nav className="flex" aria-label="Breadcrumb">
-    {items.map((item, index) => (
+    fqjmlsdkflsqkdjflmqskdjf
+    {/* {items.map((item, index) => (
       <React.Fragment key={index}>
         {index > 0 && (
           <svg
@@ -30,7 +31,7 @@ const Breadcrumb = ({ items }) => {
           )}
         </span>
       </React.Fragment>
-    ))}
+    ))} */}
   </nav>;
 };
 
