@@ -3,7 +3,7 @@ import { FaFileImport } from 'react-icons/fa';
 
 function Files() {
   return (
-    <div className="bg-white w-80 h-96 rounded-3xl p-3">
+    <div className="bg-white w-1/4 h-96 rounded-3xl p-3">
       <div className="flex flex-row items-center justify-between relative">
         <p className="font-bold ml-3">Files/Docs</p>
         <a

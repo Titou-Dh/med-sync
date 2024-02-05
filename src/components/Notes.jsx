@@ -2,7 +2,7 @@ import React from 'react';
 
 function Notes() {
   return (
-    <div className="bg-white w-80 h-96 rounded-3xl p-3">
+    <div className="bg-white w-1/4 h-96 rounded-3xl p-3">
       <div className="flex flex-row	items-center relative">
         <p className="ml-10 font-bold">Notes</p>
         <a

@@ -4,7 +4,7 @@ import Ellipse from './assets/Ellipse.png';
 
 function Profile() {
   return (
-    <div className="bg-white max-w-3xl h-96 rounded-3xl p-3 flex flex-row justify-center items-center ">
+    <div className="bg-white w-2/4 h-96 rounded-3xl p-3 flex flex-row justify-center items-center ">
       <div className="w-2/5 flex flex-col justify-center items-center">
         <img className="w-20 h-20" src={Ellipse} />
         <h1 className="text-3xl font-medium">Anthony Cook</h1>
@@ -22,7 +22,7 @@ function Profile() {
           </div>
         </div>
       </div>
-      <div className="w-3/5 h-80 border-solid border-l-2 border-l-gris flex items-center justify-between">
+      <div className="w-3/5 h-80 border-solid border-l-2 border-l-gris flex items-center justify-between text-xl">
         <table className="w-1/2">
           <tr>
             <td>

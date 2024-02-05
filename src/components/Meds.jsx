@@ -18,11 +18,13 @@ function Meds() {
           {[...Array(20).keys()].map((index) => (
             <li key={index} className=" h-10 w-full bg-softBlue">
               <table className="flex w-full content-between justify-center items-center ">
-                <td className="w-1/5 border-b-0">Doliprane</td>
-                <td className="w-1/5 border-b-0">01 Jan 2023</td>
-                <td className="w-1/5 border-b-0">01 Feb 2023</td>
-                <td className="w-1/5 border-b-0">3 by day</td>
-                <td className="w-1/5 border-b-0">Complete</td>
+                <tr>
+                  <td className="w-1/5 border-b-0">Doliprane</td>
+                  <td className="w-1/5 border-b-0">01 Jan 2023</td>
+                  <td className="w-1/5 border-b-0">01 Feb 2023</td>
+                  <td className="w-1/5 border-b-0">3 by day</td>
+                  <td className="w-1/5 border-b-0">Complete</td>
+                </tr>
               </table>
             </li>
           ))}
