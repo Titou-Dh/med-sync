@@ -3,7 +3,7 @@ import Ellipse from './assets/Ellipse.png';
 import Doctor from './assets/Doctor.png';
 import './css/Chat.css';
 
-function Chat() {
+function ChatArea() {
   const [messages, setMessages] = useState([
     { text: 'Hello!', sender: 'user' },
     { text: 'Hi there!', sender: 'other' },
@@ -94,4 +94,4 @@ function Chat() {
   );
 }
 
-export default Chat;
+export default ChatArea;

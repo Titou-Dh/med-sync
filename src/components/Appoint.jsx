@@ -1,5 +1,4 @@
 import React from 'react';
-import BiJournalText from 'react-icons/bi';
 
 function Appoint() {
   return (

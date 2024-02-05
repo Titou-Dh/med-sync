@@ -12,7 +12,7 @@ const Patients = () => {
     <div className="p-4 ">
       <div className="flex items-end gap-2 my-4">
         <NavLink to="/" key="0">
-          <span className="capitalize text-xl ">dashboard</span>
+          <span className="capitalize text-xl text-blue-500 ">dashboard</span>
         </NavLink>
         <FaGreaterThan className="text-gray-400 text-xl" />
         <NavLink to="/patients" key="0">
