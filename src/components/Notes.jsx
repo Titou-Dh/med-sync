@@ -23,6 +23,7 @@ function Notes() {
           aliquip ex ea commodo consequat.
         </textarea>
         <button
+          type="button"
           className="rounded-lg bg-primaryBlue p-2 text-white hover:bg-sky-700 absolute right-10 bottom-6  "
           id="save-note"
         >
