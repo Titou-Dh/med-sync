@@ -42,6 +42,17 @@ module.exports = {
         'hero-pattern':
           "url('https://i.ibb.co/MkvLDfb/Rectangle-4389.png')",
       },
+      colors: {
+        gris: '#95A5A6',
+        lightGris: '#E0E0E0',
+        primaryBlue: '#3498DB',
+        softBlue: '#E5F5FF',
+      },
+      spacing: {
+        100: '40rem',
+        99: '33.5rem',
+        101: '68 rem',
+      },
     },
   },
   plugins: [],

@@ -1,0 +1,28 @@
+h1{
+  font-weight: 700;
+}
+
+h2{
+  font-size: 20px;
+  color: #95A5A6;
+  font-weight: 500;
+}
+
+td div p{
+  font-weight: 600 ;
+}
+
+td{
+  border-bottom: 2px solid #95A5A6 ;
+  padding: 7px;
+  
+  
+
+}
+
+table{
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+
