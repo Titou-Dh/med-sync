@@ -22,7 +22,7 @@ function Profile() {
           </div>
         </div>
       </div>
-      <div className="w-3/5 h-80 border-solid border-l-2 border-l-gris flex items-center justify-between text-xl">
+      <div className="w-3/5 h-80 border-solid border-l-2 border-l-gris flex items-center  text-xs">
         <table className="w-1/2">
           <tr>
             <td>
