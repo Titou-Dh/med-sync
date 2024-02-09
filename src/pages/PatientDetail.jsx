@@ -38,7 +38,7 @@ const PatientDetails = () => {
         <div className="flex items-center">
           <div className="flex flex-col">
             {/* <Appoint /> */}
-            <Meds />
+            {/* <Meds /> */}
           </div>
           <div>
             <ChatArea />
