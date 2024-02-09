@@ -1,18 +1,18 @@
-h1{
+.title1{
   font-weight: 700;
 }
 
-h2{
+.title2{
   font-size: 20px;
   color: #95A5A6;
   font-weight: 500;
 }
 
-td div p{
+.table-u td  p{
   font-weight: 600 ;
 }
 
-td{
+.table-u td{
   border-bottom: 2px solid #95A5A6 ;
   padding: 7px;
   
@@ -20,7 +20,7 @@ td{
 
 }
 
-table{
+.table-u{
   margin-right: 25px;
   margin-left: 25px;
 }

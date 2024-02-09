@@ -35,12 +35,12 @@ const PatientDetails = () => {
           <Notes />
           <Files />
         </div>
-        <div className="flex items-center">
-          <div className="flex flex-col">
+        <div className="flex items-center  gap-2 px-10">
+          <div className="flex flex-col w-3/4">
             {/* <Appoint /> */}
             {/* <Meds /> */}
           </div>
-          <div>
+          <div className="w-1/4">
             <ChatArea />
           </div>
         </div>
