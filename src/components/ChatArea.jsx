@@ -35,7 +35,7 @@ function ChatArea() {
   };
 
   return (
-    <div className=" h-100 bg-white shadow-md overflow-hidden relative rounded-3xl">
+    <div className=" h-full bg-white shadow-md overflow-hidden relative rounded-3xl">
       <div className=" text-black py-2 font-bold w-5/6 m-auto text-xl border-b-lightGris border-solid border-b-2 ">
         Chat
       </div>
