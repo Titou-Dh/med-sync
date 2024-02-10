@@ -8,9 +8,9 @@ function Appoint() {
         <button
           type="button"
           className=" bg-transparent p-1.5 text-gris rounded-lg mr-3 focus:bg-primaryBlue focus:text-white "
-          ref={(inp) => {
-            inp.focus();
-          }}
+          // ref={(inp) => {
+          //   inp.focus();
+          // }}
         >
           Upcoming appointment
         </button>
