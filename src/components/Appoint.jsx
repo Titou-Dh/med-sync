@@ -2,7 +2,7 @@ import React from 'react';
 
 function Appoint() {
   return (
-    <div className="h-96 w-9/12 bg-white relative rounded-3xl">
+    <div className="h-96 w-full bg-white relative rounded-3xl">
       <div className="bg-lightGris max-w-fit p-3 rounded-xl ml-11 mt-5 absolute">
         <button
           type="button"
@@ -40,7 +40,7 @@ function Appoint() {
               key={index} // Issue: Index should not be used as key if possible
               className="py-2.5 ml-5 h-20 bg-white mb-9 rounded-3xl"
             >
-              <table className="flex content-center justify-center items-center ">
+              <table className="">
                 <tbody> {/* Added tbody */}
                   <tr>
                     <td className=" border-b-0 text-left border-r-2 border-r-gris w-1/5">
@@ -50,7 +50,6 @@ function Appoint() {
                   </tr>
                   <tr>
                     <td className="border-b-0  text-center border-r-2 w-1/5 border-r-gris">
-                      {' '}
                       <p className="text-gris font-medium">Type</p>
                       <h1>Consultation</h1>
                     </td>
