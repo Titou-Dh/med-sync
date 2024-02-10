@@ -2,9 +2,9 @@ import React from 'react';
 
 function Meds() {
   return (
-    <div className=" h-80 w-9/12 bg-white relative rounded-3xl">
+    <div className=" h-4/10 w-full  bg-white relative rounded-3xl">
       <h1 className="absolute ml-10 mt-10">Meds</h1>
-      <div className=" ml-20 mt-20 absolute w-11/12 ">
+      <div className=" ml-20 mt-20 w-11/12 ">
         <ul className="flex w-full content-around justify-center items-center">
           <li className="w-1/5">Name</li>
           <li className="w-1/5">First day</li>

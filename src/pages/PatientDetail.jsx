@@ -29,16 +29,16 @@ const PatientDetails = () => {
         </NavLink>
         <FaGreaterThan className="text-gray-400 text-xl" />
       </div>
-      <div className="">
+      <div className="flex flex-col gap-2">
         <div className="flex items-center gap-2 px-10">
           <Profile />
           <Notes />
           <Files />
         </div>
-        <div className="flex items-center  gap-2 px-10">
+        <div className="flex   gap-2 px-10">
           <div className=" gap-2 w-3/4">
             <Appoint />
-            {/* <Meds /> */}
+            <Meds />
           </div>
           <div className="w-1/4">
             <ChatArea />
