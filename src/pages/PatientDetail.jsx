@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, NavLink } from 'react-router-dom';
 import { FaGreaterThan } from 'react-icons/fa';
 import { patients } from '../data/dummy.js';
-import { Appoint, ChatArea, Files, Meds, Notes, Profile } from '../components';
+import { ChatArea, Files, Notes, Profile, Meds, Appoint } from '../components';
 
 const PatientDetails = () => {
   const { id } = useParams();
@@ -36,7 +36,7 @@ const PatientDetails = () => {
           <Files />
         </div>
         <div className="flex items-center  gap-2 px-10">
-          <div className="flex flex-col w-3/4">
+          <div className="flex flex-col gap-2 w-3/4">
             {/* <Appoint /> */}
             {/* <Meds /> */}
           </div>
