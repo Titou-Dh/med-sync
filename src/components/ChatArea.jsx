@@ -35,7 +35,7 @@ function ChatArea() {
   };
 
   return (
-    <div className="w-80 h-100 bg-white shadow-md overflow-hidden relative rounded-3xl">
+    <div className=" h-100 bg-white shadow-md overflow-hidden relative rounded-3xl">
       <div className=" text-black py-2 font-bold w-5/6 m-auto text-xl border-b-lightGris border-solid border-b-2 ">
         Chat
       </div>
@@ -73,7 +73,7 @@ function ChatArea() {
           </div>
         ))}
       </div>
-      <div className="flex items-center p-4 bottom-0 w-80 absolute">
+      <div className="flex items-center p-4 bottom-0 w-full absolute">
         <input
           type="text"
           className="flex-1  px-3 py-1 border-2 border-solid border-sky-500  mr-2 focus:outline-none focus:ring focus:border-blue-300 rounded-3xl"
