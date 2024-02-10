@@ -36,8 +36,8 @@ const PatientDetails = () => {
           <Files />
         </div>
         <div className="flex items-center  gap-2 px-10">
-          <div className="flex flex-col gap-2 w-3/4">
-            {/* <Appoint /> */}
+          <div className=" gap-2 w-3/4">
+            <Appoint />
             {/* <Meds /> */}
           </div>
           <div className="w-1/4">

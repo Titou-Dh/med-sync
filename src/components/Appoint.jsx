@@ -43,7 +43,7 @@ function Appoint() {
             >
               <table className="w-full">
                 <tbody> {/* Added tbody */}
-                  <tr>
+                  <th>
                     <td className=" border-b-0 text-left border-r-2 border-r-gris w-1/5">
                       <h1>01 Feb 2023</h1>
                       <p className="text-gris">9:00 AM</p>
@@ -64,7 +64,7 @@ function Appoint() {
                       <FaNotesMedical />
                       Notes
                     </td>
-                  </tr>
+                  </th>
                 </tbody>
               </table>
             </li>
