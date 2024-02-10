@@ -36,7 +36,7 @@ const PatientDetails = () => {
           <Files />
         </div>
         <div className="flex   gap-2 px-10">
-          <div className=" gap-2 w-3/4">
+          <div className="flex flex-col gap-2 w-3/4">
             <Appoint />
             <Meds />
           </div>

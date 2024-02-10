@@ -39,12 +39,12 @@ function Appoint() {
           {[...Array(20).keys()].map((index) => (
             <li
               key={index} // Issue: Index should not be used as key if possible
-              className="py-2.5 ml-5 h-20 bg-white mb-9 rounded-3xl"
+              className="flex items-center ml-5 h-20 bg-white mb-9 rounded-3xl"
             >
               <table className="w-full">
-                <tbody> {/* Added tbody */}
-                  <th>
-                    <td className=" border-b-0 text-left border-r-2 border-r-gris w-1/5">
+                <tbody>
+                  <th className="w-full flex justify-around items-center">
+                    <td className=" border-b-0 text-left border-r-2 border-r-gris w-1/5 px-3">
                       <h1>01 Feb 2023</h1>
                       <p className="text-gris">9:00 AM</p>
                     </td>
@@ -60,9 +60,8 @@ function Appoint() {
                       <p className="text-gris font-medium">Nurse</p>
                       <h1>Consultation</h1>
                     </td>
-                    <td className="border-b-0  flex items-center justify-center cursor-pointer text-primaryBlue font-semibold py-3">
-                      <FaNotesMedical />
-                      Notes
+                    <td className="border-b-0 flex items-center justify-center    w-1/5 cursor-pointer text-primaryBlue font-semibold py-3">
+                      <FaNotesMedical />Notes
                     </td>
                   </th>
                 </tbody>
