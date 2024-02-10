@@ -15,19 +15,14 @@ const PatientDetails = () => {
 
   return (
     <div className="">
-      <div className="flex items-end gap-2 my-4">
-        <NavLink to="/" key="0">
-          <span className="capitalize text-xl text-blue-500">dashboard</span>
-        </NavLink>
-        <FaGreaterThan className="text-gray-400 text-xl" />
+      <div className="flex items-center gap-1 px-10 my-4 ">
         <NavLink to="/patients" key="0">
-          <span className="capitalize text-xl text-blue-500">Patients</span>
+          <span className="capitalize text-lg text-blue-500">Patients</span>
         </NavLink>
-        <FaGreaterThan className="text-gray-400 text-xl" />
+        <FaGreaterThan className=" text-lg" />
         <NavLink to="/patients" key="0">
-          <span className="capitalize text-xl ">{patient.first_name}</span>
+          <span className="capitalize text-lg text-gray-500">{patient.first_name}</span>
         </NavLink>
-        <FaGreaterThan className="text-gray-400 text-xl" />
       </div>
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-2 px-10">

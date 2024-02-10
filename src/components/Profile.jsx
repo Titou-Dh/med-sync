@@ -49,7 +49,7 @@ function Profile() {
             </td>
           </tr>
         </table>
-        <table className="w-1/2">
+        <table className="w-1/2 table-u">
           <tr>
             <td>
               <h2 className="title2">Birthday</h2>
