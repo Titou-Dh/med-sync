@@ -7,7 +7,7 @@ import { ChatArea, Files, Notes, Profile, Meds, Appoint } from '../components';
 const PatientDetails = () => {
   const { id } = useParams();
 
-  const patient = patients.find((p) => p.id == id);
+  const patient = patients.find((p) => p.id === parseInt(id, 10));
 
   if (!patient) {
     return <h1>Patient not found</h1>;
