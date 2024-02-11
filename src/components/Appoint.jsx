@@ -1,28 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaNotesMedical } from 'react-icons/fa';
 
 function Appoint() {
+  const [buttonBackground, setButtonBackground] = useState({
+    upcoming: 'bg-primaryBlue text-white',
+    past: 'bg-transparent',
+    missed: 'bg-transparent',
+  });
+
+  const handleButtonClick = (button) => {
+    setButtonBackground({
+      upcoming: 'bg-transparent text-gris',
+      past: 'bg-transparent text-gris',
+      missed: 'bg-transparent text-gris',
+    });
+
+    setButtonBackground((prevBackground) => ({
+      ...prevBackground,
+      [button]: ' text-white bg-primaryBlue',
+    }));
+  };
   return (
     <div className="h-96 w-full bg-white relative rounded-3xl">
       <div className="bg-lightGris max-w-fit p-3 rounded-xl ml-11 mt-5 absolute">
         <button
           type="button"
-          className=" bg-transparent p-1.5 text-gris rounded-lg mr-3 focus:bg-primaryBlue focus:text-white "
-          // ref={(inp) => {
-          //   inp.focus();
-          // }}
+          className={`p-1.5 text-gris rounded-lg mr-3 ${buttonBackground.upcoming}`}
+          onClick={() => handleButtonClick('upcoming')}
         >
           Upcoming appointment
         </button>
         <button
           type="button"
-          className=" bg-transparent p-1.5 text-gris rounded-lg mr-3 focus:bg-primaryBlue focus:text-white"
+          className={`p-1.5 text-gris rounded-lg mr-3 ${buttonBackground.past}`}
+          onClick={() => handleButtonClick('past')}
         >
           Past appointment
         </button>
         <button
           type="button"
-          className=" bg-transparent p-1.5 text-gris rounded-lg mr-3 focus:bg-primaryBlue focus:text-white"
+          className={`p-1.5 text-gris rounded-lg mr-3 ${buttonBackground.missed}`}
+          onClick={() => handleButtonClick('missed')}
         >
           Missed appointment
         </button>
