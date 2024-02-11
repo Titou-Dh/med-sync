@@ -3,7 +3,7 @@ import { FaNotesMedical } from 'react-icons/fa';
 
 function Appoint() {
   const [buttonBackground, setButtonBackground] = useState({
-    upcoming: 'bg-primaryBlue text-white',
+    upcoming: ' bg-primaryBlue  text-slate-50',
     past: 'bg-transparent',
     missed: 'bg-transparent',
   });
@@ -17,7 +17,7 @@ function Appoint() {
 
     setButtonBackground((prevBackground) => ({
       ...prevBackground,
-      [button]: ' text-white bg-primaryBlue',
+      [button]: '  text-slate-50 bg-primaryBlue',
     }));
   };
   return (
