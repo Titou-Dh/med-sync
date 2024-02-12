@@ -25,28 +25,6 @@ const Patients = () => {
         style={{ height: '80vh' }}
       >
         <table className="min-w-full bg-white  border-gray-300">
-          <thead>
-            <tr>
-              <th className="py-2 px-4 border-b">
-                ID
-              </th>
-              <th className="py-2 px-4 border-b">
-                Firstname
-              </th>
-              <th className="py-2 px-4 border-b">
-                Lastname
-              </th>
-              <th className="py-2 px-4 border-b">
-                Email
-              </th>
-              <th className="py-2 px-4 border-b">
-                Gender
-              </th>
-              <th className="py-2 px-4 border-b">
-                Ip Address
-              </th>
-            </tr>
-          </thead>
           <tbody>
             {patients.map((patient) => (
               <tr
@@ -54,7 +32,6 @@ const Patients = () => {
                 onClick={() => handleRowClick(patient.id)}
                 className={selectedPatientId === patient.id ? 'selected-row' : ''}
               >
-                <td className="py-4 px-4 border-b">{patient.id}</td>
                 <td className="py-4 px-4 border-b">
                   <NavLink to={`/patients/${patient.id}`} className="text-blue-500">
                     {patient.first_name}
