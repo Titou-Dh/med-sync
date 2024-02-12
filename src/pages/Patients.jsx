@@ -21,7 +21,7 @@ const Patients = () => {
         <FaGreaterThan className="text-gray-400 text-xl" />
       </div>
       <div
-        className="bg-white rounded-2xl px-10 py-10 overflow-scroll"
+        className="bg-white rounded-2xl px-5 py-5 overflow-scroll"
         style={{ height: '80vh' }}
       >
         <table className="min-w-full bg-white  border-gray-300">
