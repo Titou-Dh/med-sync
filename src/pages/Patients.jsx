@@ -30,7 +30,7 @@ const Patients = () => {
               <tr
                 key={patient.id}
                 onClick={() => handleRowClick(patient.id)}
-                className={selectedPatientId === patient.id ? 'selected-row' : ''}
+                className={selectedPatientId === patient.id ? 'bg-gray-100' : ''}
               >
                 <td className="py-4 px-4 border-b">
                   <NavLink to={`/patients/${patient.id}`} className="text-blue-500">
